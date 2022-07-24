@@ -27,7 +27,6 @@ public class Utilities {
 			    		addFilter(RequestLoggingFilter.logRequestTo(log)).
 			    		addFilter(ResponseLoggingFilter.logResponseTo(log)).
 			    		build();
-
 			return req;
 		}
 		return req;
@@ -38,10 +37,7 @@ public class Utilities {
 		Properties prop= new Properties();
 		String currentDir=System.getProperty("user.dir");
 		String location=currentDir+"\\src\\test\\java\\resources\\globalProperties.properties";
-//		System.out.println("path is :"+location);
 		FileInputStream fis=new FileInputStream(location);
-//		FileInputStream fis= new FileInputStream
-//		("C:\\Users\\HP\\Framework_Creation\\BitlyService\\src\\test\\java\\resources\\globalProperties.properties");
 		prop.load(fis);
 		String value=prop.getProperty(key);		
 		return value;
@@ -50,10 +46,8 @@ public class Utilities {
 	public String retrieveJsonResponse(Response response, String key)
 	{
 		String resp= response.asString();
-		System.out.println("generate :"+resp);
 	    JsonPath js= new JsonPath(resp);
-	   String actual= js.get(key).toString();
-	   System.out.println("actual value :"+actual);
+	    String actual= js.get(key).toString();
 	   return actual;
 	}
 	
