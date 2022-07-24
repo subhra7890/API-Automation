@@ -1,0 +1,161 @@
+Request method:	GET
+Request URI:	https://api-ssl.bitly.com/v4/groups?organization_guid=Om7n6mgqoZo
+Proxy:			<none>
+Request params:	<none>
+Query params:	organization_guid=Om7n6mgqoZo
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 1b2d2b7b7af27ea8c448105d3b79ab3868a08e90
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 24 Jul 2022 16:27:00 GMT
+Content-Type: application/json
+Content-Length: 297
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "groups": [
+        {
+            "created": "2022-07-23T06:38:33+0000",
+            "modified": "2022-07-23T06:38:33+0000",
+            "bsds": [
+                
+            ],
+            "guid": "Bm7n6dnTb2r",
+            "organization_guid": "Om7n6mgqoZo",
+            "name": "subhra7890",
+            "is_active": true,
+            "role": "org-admin",
+            "references": {
+                "organization": "https://api-ssl.bitly.com/v4/organizations/Om7n6mgqoZo"
+            }
+        }
+    ]
+}
+Request method:	GET
+Request URI:	https://api-ssl.bitly.com/v4/groups/Bm7n6dnTb2r/bitlinks/clicks?unit=month&units=5&unit_reference=2022-07-22T06%3A42%3A00%2B0000
+Proxy:			<none>
+Request params:	<none>
+Query params:	unit=month
+				units=5
+				unit_reference=2022-07-22T06:42:00+0000
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 1b2d2b7b7af27ea8c448105d3b79ab3868a08e90
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 24 Jul 2022 16:27:02 GMT
+Content-Type: application/json
+Content-Length: 455
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "links": [
+        {
+            "created_at": "2022-07-23T11:57:02+0000",
+            "id": "bit.ly/3RVy9Ah",
+            "link": "https://bit.ly/3RVy9Ah",
+            "custom_bitlinks": [
+                
+            ],
+            "long_url": "https://www.cricbuzz.com/",
+            "title": "API document",
+            "archived": false,
+            "created_by": "subhra7890",
+            "client_id": "ece654beaf35f9c29f610ffd4fb128702b4bad15",
+            "tags": [
+                "sports",
+                " enter"
+            ],
+            "deeplinks": [
+                
+            ],
+            "references": {
+                "group": "https://api-ssl.bitly.com/v4/groups/Bm7n6dnTb2r"
+            }
+        }
+    ],
+    "sorted_links": [
+        {
+            "id": "bit.ly/3RVy9Ah",
+            "clicks": 1
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer 1b2d2b7b7af27ea8c448105d3b79ab3868a08e90
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "long_url": "https://www.cricbuzz.com/",
+    "domain": "bit.ly",
+    "group_guid": "Bm7n6dnTb2r",
+    "title": "API document",
+    "tags": [
+        "sports",
+        " enter"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sun, 24 Jul 2022 16:27:02 GMT
+Content-Type: application/json
+Content-Length: 310
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+
+{
+    "created_at": "2022-07-23T11:57:02+0000",
+    "id": "bit.ly/3RVy9Ah",
+    "link": "https://bit.ly/3RVy9Ah",
+    "custom_bitlinks": [
+        
+    ],
+    "long_url": "https://www.cricbuzz.com/",
+    "title": "API document",
+    "archived": false,
+    "tags": [
+        "sports",
+        " enter"
+    ],
+    "deeplinks": [
+        
+    ],
+    "references": {
+        "group": "https://api-ssl.bitly.com/v4/groups/Bm7n6dnTb2r"
+    }
+}
